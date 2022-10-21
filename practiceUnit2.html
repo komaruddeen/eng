@@ -39,6 +39,12 @@
     <link href="css/style.css" rel="stylesheet" />
     <!-- sweetalert -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <style>
+      body,
+      h5 {
+        font-family: "Kanit", sans-serif;
+      }
+    </style>
   </head>
 
   <body>
@@ -105,61 +111,34 @@
     <div class="container mt-5">
       <div class="card">
         <div class="card-body">
-          <h4 class="text-center">
-            Adjective ending in  - ing and - ed
-          </h4>
-          <h5 class="text-center">
-            (คำคุณศัพท์ที่ลงท้ายด้วย ing และ ed)
-          </h5>
-          <div class="row-cols-2">
-            <div class="col-sm-3">
+          <h4 class="text-center">Adjective ending in - ing and - ed</h4>
+          <h5 class="text-center">(คำคุณศัพท์ที่ลงท้ายด้วย ing และ ed)</h5>
+          <div class="row mt-3">
+            <div class="col-lg-6">
               I thing horror movies are <b>frightening.</b>
             </div>
-            <div class="col-sm-9">
-              <div class="row">
-                <div class="col-8 col-sm-6">
-                  They're <b>frightening</b> movies.
-                </div>
-                <div class="col-4 col-sm-6">
-                  I'm <b>frightened by</b> horror movies.
-                </div>
-              </div>
-            </div>
-           </div>
-           <br>
-           <div class="row-cols-2">
-            <div class="col-sm-3">
+            <div class="col-lg-6">I'm <b>frightened by</b> horror movies.</div>
+            <div class="col-lg-12 mb-3">They're <b>frightening</b> movies.</div>
+
+            <div class="col-lg-6 mt-3">
               I think action movies are <b>interesting.</b>
             </div>
-            <div class="col-sm-9">
-              <div class="row">
-                <div class="col-8 col-sm-6">
-                    They're <b>interesting</b> movies.
-                </div>
-                <div class="col-4 col-sm-6">
-                  I'm <b>interested in</b> action movies.
-                </div>
-              </div>
+            <div class="col-lg-6">
+              I'm <b>interested in</b> action movies.
             </div>
-           </div>
-           <br>
-           <div class="row-cols-2">
-            <div class="col-sm-3">
-              Do you like jazz?
-            </div>
-            <div class="col-sm-9">
-              <div class="row">
-                <div class="col-8 col-sm-6">
-                  Yes. I think it's very <b>relexing.</b>
-                </div>
-                <div class="col-4 col-sm-6">
-                  Yes. It makes me feel <b>relexed.</b>
-                </div>
-              </div>
-            </div>
-           </div><br><br>
+            <div class="col-lg-12">They're <b>interesting</b> movies.</div>
 
-        <h3 class="text-center">1</h3>
+            <div class="col-lg-6 mt-3">
+              Do you like jazz?</b>
+            </div>
+            <div class="col-lg-6">
+              Yes. It makes me feel <b>relexed.</b>
+            </div>
+            <div class="col-lg-12">Yes. I think it's very <b>relexing.</b>	</div>
+          </div>
+          <br /><br />
+
+          <h3 class="text-center">1</h3>
           <h4 class="text-center">
             Complate the sentences with a pair of words.
           </h4>
@@ -168,54 +147,40 @@
           </h5>
           <form id="form_id" action="" method="POST">
             <div class="row mt-3">
-              <div class="col-lg-4 mt-3">
-                amazed - amazing
-              
-              </div>
-              <div class="col-lg-4 mt-3">
-                bored - boring 
-              
-              </div>
-              <div class="col-lg-4 mt-3">
-                excited - exciting
-               
-              </div>
+              <div class="col-lg-4 mt-3">amazed - amazing</div>
+              <div class="col-lg-4 mt-3">bored - boring</div>
+              <div class="col-lg-4 mt-3">excited - exciting</div>
 
-              <div class="col-lg-4 mt-3">
-                disappointed - disappointing
-                
-              </div>
-              <div class="col-lg-4 mt-3">
-              
-                
-              </div>
-              <div class="col-lg-4 mt-3">
-               
-               
-              </div><br><br><br>
-              
+              <div class="col-lg-4 mt-3">disappointed - disappointing</div>
+              <div class="col-lg-4 mt-3"></div>
+              <div class="col-lg-4 mt-3"></div>
+              <br /><br /><br />
+
               <div class="col-lg-12 mt-1">
-                1. Her new CD is 
+                1. Her new CD is
                 <input
                   type="text"
                   name="amazing"
-                  value="amazing" disabled
+                  value="amazing"
+                  disabled
                   class="text-center"
                   placeholder="คำตอบข้อที่ 1."
                   aria-label="Username"
                 />
-                ! I'm 
+                ! I'm
                 <input
                   type="text"
                   name="amazed"
-                  value="amazed" disabled
+                  value="amazed"
+                  disabled
                   class="text-center"
                   placeholder="คำตอบข้อที่ 1."
                   aria-label="Username"
-                /> byher voice! How does she make that sound?
+                />
+                byher voice! How does she make that sound?
               </div>
               <div class="col-lg-12 mt-3">
-                2. I'm 
+                2. I'm
                 <input
                   type="text"
                   name="excited"
@@ -253,7 +218,7 @@
               </div>
 
               <div class="col-lg-12 mt-3">
-                4. This music is so 
+                4. This music is so
                 <input
                   type="text"
                   name="boring"
@@ -271,13 +236,10 @@
                 />
                 when I listen to jazz.
               </div>
-              
-
             </div>
             <button type="submit" class="btn btn-primary mt-5">ส่งคำตอบ</button>
           </form>
 
-        
           <!-- <div class="row">
             <div class="col-lg-4">
               <h5 class="text-center text-danger">art class</h5>
@@ -312,7 +274,7 @@
             </div>
           </div>-->
         </div>
-      </div> 
+      </div>
     </div>
 
     <!-- JavaScript Libraries -->
@@ -337,46 +299,39 @@
           var disappointed = $("input[name='disappointed']", this).val();
           var boring = $("input[name='boring']", this).val();
           var bored = $("input[name='bored']", this).val();
-          var score =  0;
+          var score = 0;
 
-        //   if(amazing == 'amazing'){
-        //     score = score + 1;
-        //   }
+          //   if(amazing == 'amazing'){
+          //     score = score + 1;
+          //   }
 
-        //   if(amazed == 'amazed'){
-        //     score = score + 1;
-        //   }
-          if(excited == 'excited'){
+          //   if(amazed == 'amazed'){
+          //     score = score + 1;
+          //   }
+          if (excited == "excited") {
             score = score + 1;
           }
-          if(exciting == 'exciting'){
+          if (exciting == "exciting") {
             score = score + 1;
           }
-          if(disappointing == 'disappointing'){
+          if (disappointing == "disappointing") {
             score = score + 1;
           }
-          if(disappointed == 'disappointed'){
+          if (disappointed == "disappointed") {
             score = score + 1;
           }
-          if(boring == 'boring'){
+          if (boring == "boring") {
             score = score + 1;
           }
-          if(bored == 'bored'){
+          if (bored == "bored") {
             score = score + 1;
           }
 
-          swal(  `คะแนนที่ได้ = ${score}/6`, ``, "success").then(
-        function () {
-          
-        }
-      );
+          swal(`คะแนนที่ได้ = ${score}/6`, ``, "success").then(function () {});
 
-          
           // var email = $("input[name='email']", this).val();
         });
       });
-      </script>
+    </script>
   </body>
 </html>
-
-

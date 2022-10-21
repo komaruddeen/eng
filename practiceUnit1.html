@@ -39,6 +39,22 @@
     <link href="css/style.css" rel="stylesheet" />
     <!-- sweetalert -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body,
+      h5,
+      h4 {
+        font-family: "Kanit", sans-serif;
+      }
+    </style>
   </head>
 
   <body>
@@ -103,14 +119,10 @@
     <!-- Navbar End -->
 
     <div class="container mt-5">
-      <div class="card">
+      <div class="card p-4">
         <div class="card-body">
-          <h5 class="text-center">
-            Agreeing and disagreeing
-          </h5>
-          <h5 class="text-center">
-            (เห็นด้วย และ ไม่เห็นด้วย)
-          </h5>
+          <h5 class="text-center">Agreeing and disagreeing</h5>
+          <h5 class="text-center">(เห็นด้วย และ ไม่เห็นด้วย)</h5>
           <table class="table">
             <thead>
               <tr class="table-dark">
@@ -167,44 +179,27 @@
             </tbody>
           </table>
 
-        <h3 class="text-center">1</h3>
-          <h5 class="text-center">
-            Match the statements and responses. (จับคู่ข้อความและคำตอบ)
-          </h5>
+          <!-- <h3 class="text-center"></h3> -->
+          <h4 class="">
+            1. Match the statements and responses. (จับคู่ข้อความและคำตอบ)
+          </h4>
           <form id="form_id" action="" method="POST">
             <div class="row mt-3">
-              <div class="col-lg-4 mt-3">
-                a. So do I.
-              
-              </div>
-              <div class="col-lg-4 mt-3">
-                b. Oh, I do.
-              
-              </div>
-              <div class="col-lg-4 mt-3">
-                c. Really? I'm not.
-               
-              </div>
+              <div class="col-lg-4 mt-3">a. So do I.</div>
+              <div class="col-lg-4 mt-3">b. Oh, I do.</div>
+              <div class="col-lg-4 mt-3">c. Really? I'm not.</div>
 
-              <div class="col-lg-4 mt-3">
-                d. So do I!
-                
-              </div>
-              <div class="col-lg-4 mt-3">
-                e. Neither did I.
-                
-              </div>
-              <div class="col-lg-4 mt-3">
-                f. Neither can I.
-               
-              </div>
-              
-              <div class="col-lg-4 mt-3">
+              <div class="col-lg-4 mt-3">d. So do I!</div>
+              <div class="col-lg-4 mt-3">e. Neither did I.</div>
+              <div class="col-lg-4 mt-3">f. Neither can I.</div>
+
+              <div class="col-lg-4 mt-4">
                 1. I didn't take a vacation this year.
                 <input
                   type="text"
                   name="eTest"
-                  value="e" disabled
+                  value="e"
+                  disabled
                   class="form-control"
                   placeholder="คำตอบข้อที่ 1."
                   aria-label="Username"
@@ -232,7 +227,7 @@
               </div>
 
               <div class="col-lg-4 mt-3">
-                4. I'm planning to go sighseeing. 
+                4. I'm planning to go sighseeing.
                 <input
                   type="text"
                   name="cTest"
@@ -261,63 +256,38 @@
                   aria-label="Username"
                 />
               </div>
-
             </div>
             <button type="submit" class="btn btn-primary mt-5">ส่งคำตอบ</button>
           </form>
-<br>
-<br>
+          <br />
+          <br />
 
-
-          <h3 class="text-center">2</h3>
-          <h5 class="text-center">
-            Complete the conversations.
-          </h5>
-          <h5 class="text-center">
-            ทำให้บทสนทนาสมบูรณ์
-          </h5>
+          <!-- <h3 class="text-center"></h3> -->
+          <h4 class="">2 Complete the conversations. ทำให้บทสนทนาสมบูรณ์</h4>
+          <!-- <h5 class="text-center"></h5> -->
           <form id="form_id_coversation" action="" method="POST">
             <div class="row mt-3">
-              <div class="col-lg-4 mt-3">
-                 So do I.
-              
-              </div>
-              <div class="col-lg-4 mt-3">
-                Neither am I. 
-              
-              </div>
-              <div class="col-lg-4 mt-3">
-               
-              
-              </div>
-              <div class="col-lg-4 mt-3">
-               
-              
-              </div>
-              <div class="col-lg-4 mt-3">
-               
-              
-              </div>
-              <div class="col-lg-4 mt-3">
-               
-              
-              </div>
-              
-              
+              <div class="col-lg-4 mt-3">So do I.</div>
+              <div class="col-lg-4 mt-3">Neither am I.</div>
+              <div class="col-lg-4 mt-3"></div>
+              <div class="col-lg-4 mt-3"></div>
+              <div class="col-lg-4 mt-3"></div>
+              <div class="col-lg-4 mt-3"></div>
+
               <div class="col-lg-5 mt-4">
-                1. A: I want to travel to different cuotries.<br>
+                1. A: I want to travel to different cuotries.<br />
                 <label>B:</label>
                 <input
                   type="text"
                   name="sodoI"
-                  value="" 
+                  value=""
                   placeholder=""
                   aria-label="Username"
                 />
-                <label >It's the best thing to do.</label>
+                <label>It's the best thing to do.</label>
               </div>
               <div class="col-lg-5 mt-4">
-                2. A: I'm not going to the beach this year.<br>
+                2. A: I'm not going to the beach this year.<br />
                 <label>B:</label>
                 <input
                   type="text"
@@ -328,12 +298,10 @@
                 />
                 <label>I'm going to the mountains.</label>
               </div>
-              
-
             </div>
             <button type="submit" class="btn btn-primary mt-5">ส่งคำตอบ</button>
           </form>
-        
+
           <!-- <div class="row">
             <div class="col-lg-4">
               <h5 class="text-center text-danger">art class</h5>
@@ -368,7 +336,7 @@
             </div>
           </div>-->
         </div>
-      </div> 
+      </div>
     </div>
 
     <!-- JavaScript Libraries -->
@@ -391,68 +359,55 @@
           var cTest = $("input[name='cTest']", this).val();
           var fTest = $("input[name='fTest']", this).val();
           var dTest = $("input[name='dTest']", this).val();
-          var score =  0;
+          var score = 0;
 
           // if(eTest == 'e'){
           //   score = score + 1;
           // }
 
-          if(aTest == 'a'){
+          if (aTest == "a") {
             score = score + 1;
           }
-          if(bTest == 'b'){
+          if (bTest == "b") {
             score = score + 1;
           }
-          if(cTest == 'c'){
+          if (cTest == "c") {
             score = score + 1;
           }
-          if(fTest == 'f'){
+          if (fTest == "f") {
             score = score + 1;
           }
-          if(dTest == 'd'){
+          if (dTest == "d") {
             score = score + 1;
           }
 
-          swal(  `คะแนนที่ได้ = ${score}/5`, ``, "success").then(
-        function () {
-          
-        }
-      );
+          swal(`คะแนนที่ได้ = ${score}/5`, ``, "success").then(function () {});
 
-          
           // var email = $("input[name='email']", this).val();
         });
       });
-      </script>
-        <script>
-          $(document).ready(function () {
-            $("#form_id_coversation").submit(function (event) {
-              event.preventDefault();
-              var sodoI = $("input[name='sodoI']", this).val();
-              var amI = $("input[name='amI']", this).val();
-              var score =  0;
-    
-              if(sodoI == 'So do I.'){
-                score = score + 1;
-              }
-    
-              if(amI == 'Neither am I.'){
-                score = score + 1;
-              }
-            
-    
-              swal(  `คะแนนที่ได้ = ${score}/2`, ``, "success").then(
-            function () {
-              
-            }
-          );
-    
-              
-              // var email = $("input[name='email']", this).val();
-            });
-          });
-          </script>
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("#form_id_coversation").submit(function (event) {
+          event.preventDefault();
+          var sodoI = $("input[name='sodoI']", this).val();
+          var amI = $("input[name='amI']", this).val();
+          var score = 0;
+
+          if (sodoI == "So do I.") {
+            score = score + 1;
+          }
+
+          if (amI == "Neither am I.") {
+            score = score + 1;
+          }
+
+          swal(`คะแนนที่ได้ = ${score}/2`, ``, "success").then(function () {});
+
+          // var email = $("input[name='email']", this).val();
+        });
+      });
+    </script>
   </body>
 </html>
-
-
